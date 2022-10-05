@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --base-color: #EFF1ED;
+  --letter-color: #505A5B;
+  --logo-color: #D36060;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: var(--base-color);
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Inter', sans-serif; 
+}
+
+.container{
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+/*header*/
+input{
+  display: none;
+}
+.menu{
+  width: 100%;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-item{
+  width: 80%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-weight: bolder;
+  color: var(--letter-color);
+}
+.menu-item .logo{
+  text-decoration:underline;
+  color: var(--logo-color);
+}
+.menu-item a{
+  text-decoration: none;
+  color: var(--letter-color);
+}
+.menu-item .button-link{
+  background-color: var(--letter-color);
+  padding: 16px 32px ;
+  border-radius: 8px;
+  outline: none;
+  color: #E8EBE4;
+}
+
+/*banner*/
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.banner{
+  width: 100%;
+  height: 1024px;
+  /*background-image: url("../img/Beleza-no-olhar.png");*/
+  background-repeat: no-repeat;
+  background-color: #C4C4C4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.banner-foto{
+  background-image: url("../img/Beleza-no-olhar.png");
+}.banner-foto-1{
+  background-image: url("../img/slide1.webp");
+  background-size: cover;
+}.banner-foto-2{
+  background-image: url("../img/slide2.webp");
+  background-size: cover;
+}.banner-foto-3{
+  background-image: url("../img/slide3.webp");
+  background-size: cover;
+}.banner-foto-4{
+  background-image: url("../img/slide4.webp");
+  background-size: cover;
+}
+
+
+.banner-title{
+
+  width: 611px;
+  height: 313px;
+  /* left: 60%;
+  top: 30%; */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 103px;
+  line-height: 156px;
+  letter-spacing: 0.02em;
+  font-feature-settings: 'ordn' on, 'liga' off;
+  color: var(--base-color);
+}
+.banner-text{
+
+  width: 496px;
+  height: 104.41px;
+  /*left: 60%;
+  top: 65%;*/
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--base-color);
+}
+
+/* Sessao Storia */
+.storia{
+  max-width: 100%;
+  max-height: 739px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 90px 100px 70px 50px;
+  
+}
+.storia-img{
+  max-width: 476px;
+  max-height: 739px;
+
+  
+}.storia-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  
+}
+.storia-text{
+  width: 476px;
+  height: 611px;
+  display: flex;
+  align-items: center;
+  color: var(--letter-color);
+  font-family: 'Inter';
+  font-style: normal;
+
+}
+.storia-text h1{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 73px;
+  font-feature-settings: 'liga' off;
+}
+.storia-text p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #333333;
+  font-feature-settings: 'liga' off;
+}
+
+/* sessao ottica */
+.ottica{
+  width: 100%;
+  height: 979px;
+  background-color: var(--letter-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.ottica-container{
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}.ottica-img img{
+  width: 100%;
+  height: 553px;
+  border-radius: 12px;
+}.ottica-text{
+  width: 476px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}.ottica-text h5{
+  width: 100%;
+  height: 24px; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-feature-settings: 'liga' off;
+  color: #E8EBE4;
+}.ottica-text h1{
+  width: 100%;
+  height: 73px; 
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 73px;
+  font-feature-settings: 'liga' off;
+  color: #EFF1ED;
+}.ottica-text p{
+  width: 100%;
+  height: 280px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  font-feature-settings: 'liga' off;
+  color: #E8EBE4;
+  word-wrap: break-word;
+}
+.brand{
+  width: 838px;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}.brand-text h3{
+  width: 100%;
+  height: 42px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: #EFF1ED;
+}.brand-logo{
+  width: 838px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}.brand-logo img{
+  cursor: pointer;
+}
+
+/* sessao Visita*/
+.visita{
+  width: 100%;
+}
+.visita-container{
+  width: 80%;
+  height: 915px;
+  margin: 80px 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}.visita-img img{
+  width: 100%;
+  height: 320px;
+}.visita-text{
+  width: 575px;/*ajustar*/
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}.visita-text .text{
+  word-wrap: break-all;
+}.visita-text h5{
+  width: 100%;
+  height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-feature-settings: 'liga' off;
+  color: var(--letter-color);
+}.visita-text h1{
+  width: 100%;
+  height: 73px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 73px;
+  font-feature-settings: 'liga' off;
+  color: var(--letter-color);
+}.visita-text p{
+  width: 100%;
+  height: 280px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  font-feature-settings: 'liga' off;
+  color: #333333;
+}.visita-text button{
+  width: calc(100% - 50%);
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #E8EBE4;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #505A5B;
+  
+}
+
+/* rodapé FOOTER*/
+footer{
+  width: 100%;
+  height: 370px;
+  background-color: var(--letter-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}.footer-container{
+  width: 70%;
+  height: 35%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}.footer-container h5{
+  width: 100%;
+  height: 33px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: 'liga' off;
+  color: #E8EBE4;
+}.footer-box-1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}.footer-container a{
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  font-feature-settings: 'liga' off;
+  color: #E8EBE4;
+}.footer-box-2{
+  width: 100%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}.footer-box-3{
+  width: 100%;
+  max-height: 76%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}.footer-box-2 .footer-orari{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}.footer-box-3 .footer-orari{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}.footer-box-3 .google-api{
+  text-decoration: underline;
+}.footer-credits{
+  height: 20%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: #E8EBE4;
+}
+
+

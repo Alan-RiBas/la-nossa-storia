@@ -1,0 +1,483 @@
+/*site no mobile*/
+@media only screen and (max-width: 460px) {
+  
+  .container{
+    max-width: 100%; 
+    height: 100%;
+  }
+  
+  /*header*/
+  header{
+    width: 60px;
+    height: 60px;
+    background-color: var(--logo-color);
+    position: sticky;
+    top: 25px;
+    left: 25px;
+    border-radius: 50%;
+    border: solid 1px  var(--base-color);
+    box-shadow: 1px 1px 0.8px#333333;
+  }.menu-item{
+    display: none;
+  }
+  /*  PODE SER RETIRADO - TEM QUE SER TRATADO */
+  label{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: sticky;
+  }
+  /* nav.menu{
+    width: 60px;
+    height: 60px;
+  } */
+  /*   PODE SER RETIRADO - TEM QUE SER TRATADO */
+  input{
+    display: none;
+  }input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+  }input:checked ~ label .hamburguer::before{
+    transform: rotate(90deg);
+    top: 0;
+  }input:checked ~ label .hamburguer::after{
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+  .hamburguer{
+    position: relative;
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+  }.hamburguer::before,
+  .hamburguer::after{
+    background-color: black;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }.hamburguer:before{
+    top: -10px;
+  }.hamburguer:after{
+    bottom: -10px;
+  }
+  .menu-mobile{
+    position: sticky;
+    border-radius: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    animation-duration: .5s;
+    animation-name: loading;
+    animation-timing-function: linear;
+  } 
+  .nav-mobile{
+    display: block;
+  }.ul-mobile{
+    position: relative;
+    width: 365px;
+    height: 40vh;
+    top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-item .logo{
+    text-decoration:underline;
+    color: var(--base-color);
+  }
+
+  @keyframes loading {
+    0%{
+      width: 0px;
+      height: 0px;
+    }
+    100%{
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+
+  /*sessao banner*/
+  main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  .banner{
+    width: 100%;
+    height: 300px;
+    /*background-image: url("../img/Beleza-no-olhar.png");*/
+    background-repeat: no-repeat;
+    background-color: #C4C4C4;
+    display: block;  
+  }
+  .banner-foto{
+    background-image: url("../img/Beleza-no-olhar.png");
+    background-size: cover;
+  }.banner-foto-1{
+    background-image: url("../img/slide1.webp");
+    background-size: cover;
+  }.banner-foto-2{
+    background-image: url("../img/slide2.webp");
+    background-size: cover;
+  }.banner-foto-3{
+    background-image: url("../img/slide3.webp");
+    background-size: cover;
+  }.banner-foto-4{
+    background-image: url("../img/slide4.webp");
+    background-size: cover;
+  }
+  
+  .banner-div{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .banner-title{
+    width: 40%;
+    height: 60px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'ordn' on, 'liga' off;
+    color: var(--base-color);
+  }
+  .banner-text{
+    width: 60%;
+    height: 104.41px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 20px;
+    color: var(--base-color);
+  }
+
+    /* Sessao Storia */
+  .storia{
+    max-width: 100%;
+    max-height: 1280px;
+    margin: 0;  
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-items: center;   */
+    /* overflow-y: scroll; */
+  }
+  .storia-img{
+    max-width: 40%;
+    /* max-height: 739px; */
+    
+    
+  }.storia-img img{
+    margin: 20px auto ;
+    width: 100%;
+    border-radius: 12px; 
+  }
+  .storia-text{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    color: var(--letter-color);
+    font-family: 'Inter';
+    font-style: normal;
+  }
+  .storia-text h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+    font-feature-settings: 'liga' off;
+  }
+  .storia-text p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #333333;
+    font-feature-settings: 'liga' off;
+  }
+
+    /* sessao ottica */
+  .ottica{
+    max-width: 100%;
+    max-height: 3500px;
+    background-color: var(--letter-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+  }
+  .ottica-container{
+    max-width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }.ottica-img{
+    max-width: 90%;
+    height: 40%;
+  }.ottica-img img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    border-radius: 12px;
+  }.ottica-text{
+    overflow-y: scroll;
+    max-width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }.ottica-text h5{
+    width: 100%;
+    height: 16px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-feature-settings: 'liga' off;
+    color: #E8EBE4;
+  }.ottica-text h1{
+    max-width: 100%;
+    height: 60px; 
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 50px;
+    font-feature-settings: 'liga' off;
+    color: #EFF1ED;
+  }.ottica-text p{
+    max-width: 100%;
+    height: 600px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    font-feature-settings: 'liga' off;
+    color: #E8EBE4;
+    word-wrap: break-word;
+  }
+  .brand{
+    max-width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }.brand-text h3{
+    width: 100%;
+    height: 20%;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #EFF1ED;
+  }.brand-logo{
+    max-width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }.brand-logo img{
+    cursor: pointer;
+  }
+
+    /* sessao Visita*/
+  .visita{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .visita-container{
+    width: 100%;
+    height:1024px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }.visita-img{
+    max-width: 100%;
+    height: 30%;
+  }.visita-img img{
+    width: 100%;
+    height: 100%;
+  }.visita-text{
+    max-width: 100%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }.visita-text .text{
+    word-wrap: break-all;
+    height: 85%;
+  }.visita-text h5{
+    width: 100%;
+    height: 8%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-feature-settings: 'liga' off;
+    color: var(--letter-color);
+  }.visita-text h1{
+    width: 100%;
+    height: 12%;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 50px;
+    font-feature-settings: 'liga' off;
+    color: var(--letter-color);
+  }.visita-text p{
+    width: 100%;
+    height: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+  }.visita-button{
+    max-width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+  }.visita-text button{
+    width: 80%;
+    margin: auto;
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #E8EBE4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #505A5B;
+  }
+
+    /* rodapé FOOTER*/
+  footer{
+    max-width: 100%;
+    height: 500px;
+    background-color: var(--letter-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }.footer-container{
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }.footer-container h5{
+    width: 100%;
+    height: 33px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-feature-settings: 'liga' off;
+    color: #E8EBE4;
+  }.footer-box-1{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }.footer-container a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    font-feature-settings: 'liga' off;
+    color: #E8EBE4;
+  }.footer-box-2{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }.footer-box-3{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }.footer-box-2 .footer-orari{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }.footer-box-3 .footer-orari{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }.footer-box-3 .google-api{
+    text-decoration: underline;
+  }.footer-credits{
+    width: 100%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #E8EBE4;
+  }
+}
