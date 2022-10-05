@@ -1,5 +1,5 @@
 /*site no mobile*/
-@media only screen and (max-width: 460px) {
+@media (max-width: 460px) {
   
   .container{
     max-width: 100%; 
@@ -481,3 +481,4 @@
     color: #E8EBE4;
   }
 }
+
